@@ -1,0 +1,13 @@
+created: 20191019092950199
+modified: 20191019105251134
+tags: 
+title: Test Clone Button
+
+from here: http://gwiz.tiddlyspot.com/#%24%3A%2FControlPanel:%24%3A%2FControlPanel%20MakeTidWidget%20%24%3A%2Fplugins%2Fmatabele%2Fmaketid%20%5B%5BMakeTid%20Target%202%5D%5D%20sample-template
+
+<$maketid  title="MakeTid Target" tags="Dwarf" template="aaDwarf Template" edit="no"><$button message="tw-new-tiddler">New Tiddler</$button></$maketid>
+
+
+<$set name="myVariable" value="Some text">
+<$text text=<<myVariable>>/>
+</$set>

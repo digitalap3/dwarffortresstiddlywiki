@@ -1,0 +1,22 @@
+created: 20191019085806123
+modified: 20191019090809750
+tags: 
+title: Field List
+
+!!Dwarf Fields
+
+skillprimary - all 'skill' fields include skill level
+
+skillsecond
+
+skillother
+
+married
+
+otherrelations - maybe?
+
+squad
+
+sex
+
+admintitle

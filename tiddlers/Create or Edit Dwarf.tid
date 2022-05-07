@@ -1,0 +1,57 @@
+created: 20191019101454731
+modified: 20191020044802188
+tags: 
+title: Create or Edit Dwarf
+
+Dwarf's Name: <$edit-text tiddler="$:/state/new-dwarf" tag="input" default=""/>
+
+<$button>
+<$action-createtiddler $basetitle={{$:/state/new-dwarf}} tags="Dwarf" text="{{||aaDwarf Template}}"/>
+Create Dwarf
+</$button>
+
+Note: if link is in italics page does not exist
+
+<$link to={{$:/state/new-dwarf}}/>
+
+Note: Though multiple boxes show the same thing only the one for the button pushed will change
+
+Sex: <$edit-text tiddler="$:/state/new-skill" tag="input" default=""/>
+<$button>
+<$action-setfield $tiddler={{$:/state/new-dwarf}} sex={{$:/state/new-skill}} />
+Set Sex
+</$button>
+
+Married to: <$edit-text tiddler="$:/state/new-skill" tag="input" default=""/>
+<$button>
+<$action-setfield $tiddler={{$:/state/new-dwarf}} married={{$:/state/new-skill}} />
+Set Married to
+</$button>
+
+Relations: <$edit-text tiddler="$:/state/new-skill" tag="input" default=""/>
+<$button>
+<$action-setfield $tiddler={{$:/state/new-dwarf}} otherrelations={{$:/state/new-skill}} />
+Set Other Relationships
+</$button>
+
+Primary Skill: <$edit-text tiddler="$:/state/new-skill" tag="input" default=""/>
+<$button>
+<$action-setfield $tiddler={{$:/state/new-dwarf}} skillprimary={{$:/state/new-skill}} />
+Set Primary Skill
+</$button>
+
+Secondary Skill: <$edit-text tiddler="$:/state/new-skill" tag="input" default=""/>
+<$button>
+<$action-setfield $tiddler={{$:/state/new-dwarf}} skillsecond={{$:/state/new-skill}} />
+Set Secondary Skill
+</$button>
+
+Other Skills: <$edit-text tiddler="$:/state/new-skill" tag="input" default=""/>
+<$button>
+<$action-setfield $tiddler={{$:/state/new-dwarf}} skillother={{$:/state/new-skill}} />
+Set Other Skills
+</$button>
+
+//include 'nonessential' or 'combat' here to add to secondary lists of dwarves to pull from//
+
+Other fields can be changed on the dwarf's page

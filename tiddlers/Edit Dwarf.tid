@@ -1,0 +1,13 @@
+created: 20191019122925418
+modified: 20191019131054612
+tags: 
+title: Edit Dwarf
+
+Dwarf to edit: <$edit-text tiddler="$:/state/edit-dwarf" tag="input" default=" "/>
+
+Primary Skill: <$edit-text tiddler="$:/state/edit-skillprimary" tag="input" default=" "/>
+
+<$button>
+<$action-setfield $tiddler={{$:/state/edit-dwarf}} skillprimary={{$:/state/edit-skillprimary}} />
+Primary Skill
+</$button>

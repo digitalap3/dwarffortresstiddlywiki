@@ -1,0 +1,17 @@
+created: 20191024053449857
+modified: 20191024053709772
+tags: squad
+title: Squad Template - Tours Example Name
+
+<$list filter="[regexp:adminjobs[(?i)guard]]"><$link><$view field="title"/></$link><br>
+
+* <$view field="adminjobs"/><br>
+
+* <$view field="skillprimary"/>
+</$list>
+
+<$list filter="[regexp:squad[Tours]!regexp:admin[(?i)guard]]"><$link><$view field="title"/></$link><br>
+
+*  <$view field="skillprimary"/><br><br>
+
+</$list>

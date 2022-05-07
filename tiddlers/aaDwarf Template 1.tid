@@ -1,0 +1,46 @@
+created: 20191019235129529
+modified: 20191020022659445
+skillprimary: Grower
+tags: Dwarf
+title: aaDwarf Template 1
+
+!!Sex : <$view field="sex"/>
+
+!!Marriage and Relations
+*  Married to: <$view field="married"/>
+
+*  Relations: <$view field="otherrelations"/>
+
+!!Primary Skill
+*  <$view field="skillprimary"/>
+
+<$reveal type="nomatch" state="$:/state/FieldReveal" text="show">
+
+<$button set="$:/state/FieldReveal" setTo="show">Change</$button>
+
+</$reveal>
+<$reveal type="match" state="$:/state/FieldReveal" text="show">
+
+<$button set="$:/state/FieldReveal" setTo="hide">Hide me</$button>
+
+Primary Skill: <$edit-text tiddler="$:/state/new-skill" tag="input" default=""/>
+<$button>
+<$action-setfield skillprimary={{$:/state/new-skill}} />
+Set Primary Skill
+</$button>
+
+</$reveal>
+
+!!Secondary Skill
+*  <$view field="skillsecond"/>
+
+!!Administration
+* <$view field="admintitle"/>
+
+!!Military
+* <$view field="squad"/>
+
+!!Notes
+!!!Other Skills/Labors
+<$view field="skillother"/>
+

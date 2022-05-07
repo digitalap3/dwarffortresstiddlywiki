@@ -1,0 +1,130 @@
+created: 20191019085728250
+modified: 20191020044633296
+tags: Dwarf
+title: aaDwarf Template
+
+!!Sex : <$view field="sex"/>
+
+!!Marriage and Relations
+*  Married to: <$view field="married"/>
+
+*  Relations: <$view field="otherrelations"/>
+
+<$reveal type="nomatch" state="$:/state/RelationsFieldReveal" text="show">
+<$button set="$:/state/RelationsFieldReveal" setTo="show">Change</$button>
+</$reveal>
+
+<$reveal type="match" state="$:/state/RelationsFieldReveal" text="show">
+
+<$button set="$:/state/RelationsFieldReveal" setTo="hide">Hide me</$button>
+
+Married to: <$edit-text tiddler="$:/state/new-skill" tag="input" default=""/>
+<$button>
+<$action-setfield married={{$:/state/new-skill}} />
+Set Married to
+</$button>
+
+Relations: <$edit-text tiddler="$:/state/new-skill" tag="input" default=""/>
+<$button>
+<$action-setfield otherrelations={{$:/state/new-skill}} />
+Set Relations
+</$button>
+</$reveal>
+
+!!Primary Skill
+*  <$view field="skillprimary"/>
+<$reveal type="nomatch" state="$:/state/PrimaryFieldReveal" text="show">
+
+<$button set="$:/state/PrimaryFieldReveal" setTo="show">Change</$button>
+
+</$reveal>
+<$reveal type="match" state="$:/state/PrimaryFieldReveal" text="show">
+
+<$button set="$:/state/PrimaryFieldReveal" setTo="hide">Hide me</$button>
+
+Primary Skill: <$edit-text tiddler="$:/state/new-skill" tag="input" default=""/>
+<$button>
+<$action-setfield skillprimary={{$:/state/new-skill}} />
+Set Primary Skill
+</$button>
+
+</$reveal>
+
+
+!!Secondary Skill
+*  <$view field="skillsecond"/>
+<$reveal type="nomatch" state="$:/state/SecondFieldReveal" text="show">
+
+<$button set="$:/state/SecondFieldReveal" setTo="show">Change</$button>
+
+</$reveal>
+<$reveal type="match" state="$:/state/SecondFieldReveal" text="show">
+
+<$button set="$:/state/SecondFieldReveal" setTo="hide">Hide me</$button>
+
+Secondary Skill: <$edit-text tiddler="$:/state/new-skill" tag="input" default=""/>
+<$button>
+<$action-setfield skillsecond={{$:/state/new-skill}} />
+Set Secondary Skill
+</$button>
+
+</$reveal>
+
+!!Administration
+* <$view field="admintitle"/>
+<$reveal type="nomatch" state="$:/state/AdminFieldReveal" text="show">
+
+<$button set="$:/state/AdminFieldReveal" setTo="show">Change</$button>
+
+</$reveal>
+<$reveal type="match" state="$:/state/AdminFieldReveal" text="show">
+
+<$button set="$:/state/AdminFieldReveal" setTo="hide">Hide me</$button>
+
+Noble and Admin Titles: <$edit-text tiddler="$:/state/new-skill" tag="input" default=""/>
+<$button>
+<$action-setfield admintitle={{$:/state/new-skill}} />
+Set Noble and Admin Title
+</$button>
+
+</$reveal>
+
+!!Military
+* <$view field="squad"/>
+<$reveal type="nomatch" state="$:/state/SquadFieldReveal" text="show">
+
+<$button set="$:/state/SquadFieldReveal" setTo="show">Change</$button>
+
+</$reveal>
+<$reveal type="match" state="$:/state/SquadFieldReveal" text="show">
+
+<$button set="$:/state/SquadFieldReveal" setTo="hide">Hide me</$button>
+
+Squad Name: <$edit-text tiddler="$:/state/new-skill" tag="input" default=""/>
+<$button>
+<$action-setfield squad={{$:/state/new-skill}} />
+Set Squad
+</$button>
+
+</$reveal>
+
+!!Notes
+!!!Other Skills
+<$view field="skillother"/>
+<$reveal type="nomatch" state="$:/state/OtherFieldReveal" text="show">
+
+<$button set="$:/state/OtherFieldReveal" setTo="show">Change</$button>
+
+</$reveal>
+<$reveal type="match" state="$:/state/OtherFieldReveal" text="show">
+
+<$button set="$:/state/OtherFieldReveal" setTo="hide">Hide me</$button>
+
+Other Skills: <$edit-text tiddler="$:/state/new-skill" tag="input" default=""/>
+<$button>
+<$action-setfield skillother={{$:/state/new-skill}} />
+Set Other Skills
+</$button>
+
+//Include nonessential or combat if applicable//
+</$reveal>
